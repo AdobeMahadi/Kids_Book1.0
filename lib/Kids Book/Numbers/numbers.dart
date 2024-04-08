@@ -9,7 +9,7 @@ class numberpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[100],
+      backgroundColor: Colors.deepPurpleAccent[50],
       body: SafeArea(
           child: SingleChildScrollView(
         child: Column(
@@ -17,51 +17,48 @@ class numberpage extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const SizedBox(
-                    width: 30,
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const home_screen()));
-                    },
-                    child: Container(
-                      height: 40,
-                      width: 40,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Colors.pinkAccent),
-                      child: const Icon(
-                        Icons.arrow_back,
-                        color: Colors.white,
-                      ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                const SizedBox(
+                  width: 30,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const home_screen()));
+                  },
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.pinkAccent),
+                    child: const Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
                     ),
                   ),
-                  const SizedBox(
-                    width: 30,
+                ),
+                const SizedBox(
+                  width: 30,
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  height: 80,
+                  width: 200,
+                  child: Text(
+                    "Numbers",
+                    style: GoogleFonts.concertOne(
+                        textStyle: const TextStyle(
+                            color: Colors.black,
+                            letterSpacing: .5,
+                            fontSize: 50)),
                   ),
-                  Container(
-                    alignment: Alignment.center,
-                    height: 80,
-                    width: 200,
-                    child: Text(
-                      "Numbers",
-                      style: GoogleFonts.concertOne(
-                          textStyle: const TextStyle(
-                              color: Colors.black,
-                              letterSpacing: .5,
-                              fontSize: 50)),
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 30,

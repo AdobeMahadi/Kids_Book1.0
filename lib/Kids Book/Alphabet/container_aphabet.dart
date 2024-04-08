@@ -36,8 +36,11 @@ class StorAlphabet extends StatelessWidget {
             ]),
         child: Text(
           Character,
-          style: GoogleFonts.concertOne(
-              textStyle: const TextStyle(fontSize: 50, color: Colors.white)),
+          style: GoogleFonts.aBeeZee(
+              textStyle: const TextStyle(
+                  fontSize: 50,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold)),
         ),
       ),
     );

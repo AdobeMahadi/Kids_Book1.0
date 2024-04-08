@@ -10,7 +10,7 @@ class symbolspage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[100],
+      backgroundColor: Colors.deepOrangeAccent[50],
       body: SafeArea(
           child: SingleChildScrollView(
         child: Column(
@@ -31,6 +31,18 @@ class symbolspage extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const home_screen()));
                   },
+                  child: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.pink,
+                    ),
+                    child: const Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
                 const SizedBox(
                   width: 30,
@@ -54,12 +66,13 @@ class symbolspage extends StatelessWidget {
               height: 40,
             ),
             Container(
-              height: MediaQuery.of(context).size.height / 1.2,
-              width: MediaQuery.of(context).size.width / 1.2,
+              padding: const EdgeInsets.all(20),
+              height: MediaQuery.of(context).size.height,
+              width: MediaQuery.of(context).size.width,
               child: GridView.count(
-                crossAxisCount: 3,
-                mainAxisSpacing: 30,
-                crossAxisSpacing: 20,
+                crossAxisCount: 4,
+                mainAxisSpacing: 20,
+                crossAxisSpacing: 10,
                 children: [
                   StoreSymbols(sign: '+'),
                   StoreSymbols(sign: '-'),
@@ -72,6 +85,15 @@ class symbolspage extends StatelessWidget {
                   StoreSymbols(sign: '@'),
                   StoreSymbols(sign: '?'),
                   StoreSymbols(sign: '&'),
+                  StoreSymbols(sign: 'π'),
+                  StoreSymbols(sign: 'α'),
+                  StoreSymbols(sign: 'β'),
+                  StoreSymbols(sign: 'γ'),
+                  StoreSymbols(sign: 'Δ'),
+                  StoreSymbols(sign: 'η'),
+                  StoreSymbols(sign: 'ω'),
+                  StoreSymbols(sign: 'Σ'),
+                  StoreSymbols(sign: 'θ'),
                 ],
               ),
             ),

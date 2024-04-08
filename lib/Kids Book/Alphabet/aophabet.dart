@@ -14,7 +14,7 @@ class _AlphabatState extends State<Alphabat> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.amber[100],
+        backgroundColor: Colors.deepOrangeAccent[50],
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
@@ -65,7 +65,7 @@ class _AlphabatState extends State<Alphabat> {
                       ),
                     ),
                     const SizedBox(
-                      height: 30,
+                      height: 50,
                     ),
                   ],
                 ),
