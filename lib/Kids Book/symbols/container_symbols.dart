@@ -37,7 +37,7 @@ class StoreSymbols extends StatelessWidget {
           child: Text(sign,
               style: GoogleFonts.notoSans(
                   textStyle: const TextStyle(
-                      fontSize: 50,
+                      fontSize: 40,
                       fontWeight: FontWeight.bold,
                       color: Colors.white))),
         ));
